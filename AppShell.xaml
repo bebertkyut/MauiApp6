@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp6.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp6.Pages"
+    Shell.FlyoutBehavior="Flyout">
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
+        Title="Ragnarok"
+        ContentTemplate="{DataTemplate local:Ragnarok}"
+        Icon="poring.jpg"
+        />
+        <ShellContent
+        Title="Pokemon"
+        ContentTemplate="{DataTemplate local:Pokemon}"
+        Icon="pikachu.jpg"
+        />
+        <ShellContent
+        Title="DOTA"
+        ContentTemplate="{DataTemplate local:Dota}"
+        Icon="dota.png"
+        />
+    </FlyoutItem>
+
+</Shell>
